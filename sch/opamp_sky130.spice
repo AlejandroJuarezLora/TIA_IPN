@@ -1,0 +1,15 @@
+** sch_path: /home/alex/Desktop/EDA/TIA_IPN/sch/opamp_sky130.sch
+.subckt opamp_sky130 vdd iref vin_n vin_p vout vss
+*.PININFO vdd:B vss:B vin_n:I vin_p:I iref:I vout:O
+XM1 vbn vin_n vp vp sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 m=200
+XM2 voe1 vin_p vp vp sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 m=200
+XM3 vbn vbn vss vss sky130_fd_pr__nfet_01v8 L=0.3 W=3 nf=1 m=30
+XM4 voe1 vbn vss vss sky130_fd_pr__nfet_01v8 L=0.3 W=3 nf=1 m=30
+XM5 vp iref vdd vdd sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 m=30
+XM7 vout iref vdd vdd sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 m=150
+XM8 iref iref vdd vdd sky130_fd_pr__pfet_01v8 L=0.3 W=3 nf=1 m=15
+XM9 net1 vdd voe1 vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.75 nf=1 m=6
+XC1 net1 vout sky130_fd_pr__cap_mim_m3_1 W=17.55 L=15 m=6
+XM6 vout voe1 vss vss sky130_fd_pr__nfet_01v8 L=0.45 W=4.5 nf=1 m=150
+.ends
+.end

@@ -1,0 +1,100 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_YT7TV5 in circuit opamp_v1 (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_8HUREQ in circuit opamp_v1 (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_BLS9H9 in circuit opamp_v1 (1)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_YC9MKB in circuit opamp_v1 (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_GQFJAV in circuit opamp_v1 (1)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_YCMRKB in circuit opamp_v1 (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_8JUMX6 in circuit opamp_v1 (1)(1 instance)
+
+Class opamp_v1 (1):  Merged 807 parallel devices.
+Subcircuit summary:
+Circuit 1: opamp_sky130                    |Circuit 2: opamp_v1                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (595->5)           |sky130_fd_pr__pfet_01v8 (595->5)           
+sky130_fd_pr__nfet_01v8 (216->4)           |sky130_fd_pr__nfet_01v8 (216->4)           
+sky130_fd_pr__cap_mim_m3_1 (6->1)          |sky130_fd_pr__cap_mim_m3_1 (6->1)          
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: opamp_sky130                    |Circuit 2: opamp_v1                        
+
+---------------------------------------------------------------------------------------
+Net: net1                                  |Net: a_10927_n7515#                        
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |  sky130_fd_pr__cap_mim_m3_1/2 = 1         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: vout                                  |Net: vout                                  
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: opamp_sky130                    |Circuit 2: opamp_v1                        
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__cap_mim_m3_1:C1    |Instance: sky130_fd_pr__cap_mim_m3_1_BLS9H 
+  1 = 2                                    |  1 = 3                                    
+  2 = 3                                    |  2 = 2                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: opamp_sky130                    |Circuit 2: opamp_v1                        
+-------------------------------------------|-------------------------------------------
+vout                                       |vout                                       
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+vin_p                                      |vin_p                                      
+vin_n                                      |vin_n                                      
+iref                                       |iref                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes opamp_sky130 and opamp_v1 are equivalent.
+
+Final result: Netlists do not match.
