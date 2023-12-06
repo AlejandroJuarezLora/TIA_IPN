@@ -1,4 +1,4 @@
-v {xschem version=3.4.3 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -149,7 +149,6 @@ C {devices/lab_wire.sym} 1572.5 -390 0 0 {name=p5 sig_type=std_logic lab=vcm
 C {devices/lab_wire.sym} 1522.5 -430 0 0 {name=p6 sig_type=std_logic lab=vin
 
 }
-C {/media/psf/Home/EDA/TIA_IPN/sch/opamp_sky130.sym} 1660 -410 0 0 {name=x1}
 C {devices/code.sym} 1900 -570 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -159,3 +158,4 @@ value="
 
 "
 spice_ignore=false}
+C {/home/alex/Desktop/EDA/TIA_IPN/sch/opamp_sky130.sym} 1660 -410 0 0 {name=x2}

@@ -44,14 +44,14 @@ N 1290 -240 1290 -95 { lab=voe2}
 N 1090 -440 1152.5 -440 { lab=iref}
 N 1275 -440 1390 -440 { lab=iref}
 N 1152.5 -440 1275 -440 { lab=iref}
-N 1330 -65 1530 -65 { lab=vin_n}
+N 1330 -65 1530 -65 { lab=vb1}
 N 1050 -410 1050 -360 { lab=iref}
 N 1180 -270 1250 -270 { lab=vin_n}
 N 1750 -190 1800 -190 { lab=#net1}
 N 1720 -250 1720 -230 { lab=vdd}
 N 1720 -190 1720 -110 { lab=vss}
 N 1570 -190 1690 -190 { lab=voe1}
-N 1860 -190 1890 -190 { lab=voutp}
+N 1860 -190 1890 -190 { lab=voutn}
 N 950 40 1210 40 { lab=vss}
 N 1610 -270 1670 -270 { lab=vin_p}
 N 950 -360 1050 -360 { lab=iref}
@@ -61,16 +61,16 @@ N 1980 -60 1980 40 { lab=vss}
 N 1890 -60 1980 -60 { lab=vss}
 N 1670 -60 1850 -60 { lab=voe1}
 N 1670 -190 1670 -60 { lab=voe1}
-N 1890 -190 1890 -90 { lab=voutp}
-N 1890 -410 1890 -190 { lab=voutp}
-N 1890 -240 2030 -240 { lab=voutp}
+N 1890 -190 1890 -90 { lab=voutn}
+N 1890 -410 1890 -190 { lab=voutn}
+N 1890 -240 2030 -240 { lab=voutn}
 N 1890 -30 1890 40 { lab=vss}
 N 760 -500 760 -460 {
 lab=vdd}
 N 760 -500 970 -500 {
 lab=vdd}
 N 760 -400 760 -100 {
-lab=voutn}
+lab=voutp}
 N 1080 -200 1290 -200 {
 lab=voe2}
 N 1050 -270 1050 -240 {
@@ -78,7 +78,7 @@ lab=vdd}
 N 950 -200 1020 -200 {
 lab=#net2}
 N 760 -200 890 -200 {
-lab=voutn}
+lab=voutp}
 N 800 -430 860 -430 {
 lab=iref}
 N 730 -430 760 -430 {
@@ -102,13 +102,15 @@ lab=vss}
 N 740 40 760 40 {
 lab=vss}
 N 720 -240 760 -240 {
-lab=voutn}
+lab=voutp}
 N 1050 -200 1050 -130 {
 lab=vss}
-N 1450 -65 1450 -40 {
-lab=vin_n}
 N 860 -430 880 -427.5 {
 lab=iref}
+N 1400 -140 1420 -140 {
+lab=vb1}
+N 1420 -140 1420 -65 {
+lab=vb1}
 C {sky130_fd_pr/pfet_01v8.sym} 1270 -270 0 0 {name=M1
 L=0.3
 W=3
@@ -195,7 +197,7 @@ C {devices/lab_wire.sym} 1405 -360 0 0 {name=p10 sig_type=std_logic lab=vp}
 C {devices/lab_pin.sym} 1767.5 -440 0 0 {name=p8 sig_type=std_logic lab=iref}
 C {devices/lab_wire.sym} 1442.5 40 0 0 {name=p16 sig_type=std_logic lab=vss
 }
-C {devices/lab_wire.sym} 1977.5 -240 0 0 {name=p12 sig_type=std_logic lab=voutp
+C {devices/lab_wire.sym} 757.5 -240 0 0 {name=p12 sig_type=std_logic lab=voutp
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1720 -210 1 0 {name=M9
 L=0.15
@@ -230,7 +232,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/lab_wire.sym} 1630 -190 0 0 {name=p13 sig_type=std_logic lab=voe1}
-C {devices/opin.sym} 2030 -240 0 0 {name=p6 lab=voutp}
+C {devices/opin.sym} 2030 -240 0 0 {name=p6 lab=voutn}
 C {sky130_fd_pr/pfet_01v8.sym} 780 -430 0 1 {name=M10
 L=0.3
 W=3
@@ -268,8 +270,8 @@ C {devices/lab_wire.sym} 1170 -200 0 0 {name=p17 sig_type=std_logic lab=voe2}
 C {devices/lab_pin.sym} 1050 -270 2 0 {name=p18 sig_type=std_logic lab=vdd
 }
 C {sky130_fd_pr/cap_mim_m3_1.sym} 920 -200 1 1 {name=C2 model=cap_mim_m3_1 W=17.55 L=15 MF=6 spiceprefix=X}
-C {devices/opin.sym} 720 -240 2 0 {name=p20 lab=voutn}
+C {devices/opin.sym} 720 -240 2 0 {name=p20 lab=voutp}
 C {devices/lab_pin.sym} 1050 -130 2 0 {name=p21 sig_type=std_logic lab=vss
 }
 C {devices/lab_pin.sym} 880 -427.5 1 1 {name=p19 sig_type=std_logic lab=iref}
-C {devices/ipin.sym} 1450 -40 0 0 {name=p15 lab=vb1}
+C {devices/ipin.sym} 1400 -140 0 0 {name=p15 lab=vb1}
