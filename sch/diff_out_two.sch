@@ -87,7 +87,7 @@ lab=vcm}
 C {devices/vsource.sym} 210 -170 0 0 {name=V1 value=DC\{vss\}}
 C {devices/vsource.sym} 310 -170 0 0 {name=V2 value=DC\{vdd\}}
 C {devices/gnd.sym} 210 -100 0 0 {name=l14 lab=GND}
-C {devices/vsource.sym} 490 -140 0 0 {name=V4 value="0.2"
+C {devices/vsource.sym} 490 -140 0 0 {name=V4 value="sin(0 0.2 1Meg)"
 spice_ignore=false}
 C {devices/lab_pin.sym} 310 -240 1 0 {name=l15 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 210 -240 1 0 {name=l16 sig_type=std_logic lab=vss}
@@ -107,7 +107,6 @@ value="
 .param iref = 100u
 .param vdd  = 1.8
 .param vss  = 0.0
-.param vcm  = 0.7
 .options TEMP = 65.0
 
 * Include Models
@@ -153,7 +152,7 @@ device="ceramic capacitor"}
 C {devices/lab_wire.sym} 1360 -340 0 0 {name=l3 sig_type=std_logic lab=vout1}
 C {devices/lab_pin.sym} 490 100 3 0 {name=l5 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 490 -50 0 0 {name=l4 sig_type=std_logic lab=vcm}
-C {devices/vsource.sym} 490 30 0 0 {name=V5 value=DC\{vcm\}}
+C {devices/vsource.sym} 490 30 0 0 {name=V5 value=0.7}
 C {devices/lab_wire.sym} 490 -320 0 0 {name=l6 sig_type=std_logic lab=vin}
 C {devices/lab_pin.sym} 1230 -420 1 0 {name=l8 sig_type=std_logic lab=vdd}
 C {devices/code.sym} 350 -500 0 0 {name=TT_MODELS
