@@ -1,0 +1,25 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1701914995
+use opamp_v1  opamp_v1_0 ../mag
+timestamp 1701460012
+transform 1 0 -2070 0 1 23287
+box 2069 -10028 26971 3199
+use opamp_v1  opamp_v1_1
+timestamp 1701460012
+transform 1 0 -2069 0 1 10028
+box 2069 -10028 26971 3199
+use sky130_fd_pr__res_high_po_2p85_6SZAMJ  sky130_fd_pr__res_high_po_2p85_6SZAMJ_0
+timestamp 1701914711
+transform 1 0 -4083 0 1 6111
+box -451 -1017 451 1017
+use sky130_fd_pr__res_high_po_2p85_BNWAAK  sky130_fd_pr__res_high_po_2p85_BNWAAK_0
+timestamp 1701914995
+transform 1 0 -2731 0 1 7580
+box -451 -3802 451 3802
+use sky130_fd_pr__res_high_po_2p85_RN83L8  sky130_fd_pr__res_high_po_2p85_RN83L8_0
+timestamp 1701914995
+transform 1 0 -1494 0 1 8047
+box -451 -4360 451 4360
+<< end >>

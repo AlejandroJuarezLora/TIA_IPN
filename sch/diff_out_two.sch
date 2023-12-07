@@ -5,97 +5,100 @@ K {}
 V {}
 S {}
 E {}
-N 390 -180 390 -140 { lab=GND}
-N 390 -280 390 -240 { lab=vss}
-N 490 -280 490 -240 { lab=vdd}
-N 490 -180 490 -140 { lab=vss}
-N 680 -360 680 -330 { lab=vin_signal}
+N 210 -140 210 -100 { lab=GND}
+N 210 -240 210 -200 { lab=vss}
+N 310 -240 310 -200 { lab=vdd}
+N 310 -140 310 -100 { lab=vss}
 N 1210 -280 1210 -250 { lab=#net1}
-N 680 -270 680 -230 { lab=vsen}
-N 990 -550 1050 -550 { lab=vin}
-N 980 -550 980 -360 { lab=vin}
-N 980 -550 990 -550 { lab=vin}
-N 1030 -360 1090 -360 { lab=vin}
-N 1260 -550 1310 -550 { lab=voutn}
+N 1030 -360 1090 -360 { lab=#net2}
 N 1250 -280 1250 -260 { lab=vss}
-N 1390 -340 1390 -310 { lab=voutn}
-N 1310 -340 1390 -340 { lab=voutn}
+N 1390 -340 1390 -310 { lab=vout1}
+N 1310 -340 1390 -340 { lab=vout1}
 N 1390 -250 1390 -200 { lab=vss}
-N 680 -10 680 30 { lab=vss}
-N 1110 -320 1170 -320 { lab=vcm}
-N 1090 -360 1170 -360 { lab=vin}
-N 920 -360 1030 -360 { lab=vin}
-N 1310 -550 1390 -550 { lab=voutn}
-N 1390 -550 1390 -340 { lab=voutn}
-N 1050 -550 1200 -550 { lab=vin}
+N 490 60 490 100 { lab=vss}
+N 1110 -320 1170 -320 { lab=vin}
+N 1090 -360 1170 -360 { lab=#net2}
 N 1230 -420 1230 -390 { lab=vdd}
-N 1230 90 1230 120 { lab=vdd}
-N 1210 -50 1210 -20 { lab=#net1}
-N 1250 -40 1250 -20 { lab=vss}
-N 1130 20 1170 20 {
-lab=vin_signal}
-N 1390 -200 1390 -100 {
-lab=vss}
-N 1310 40 1390 40 {
-lab=voutp}
-N 1390 -40 1390 40 {
-lab=voutp}
-N 1070 210 1190 210 {
-lab=#net2}
-N 1120 60 1120 210 {
-lab=#net2}
-N 1120 60 1170 60 {
-lab=#net2}
-N 1250 210 1390 210 {
-lab=voutp}
-N 1390 40 1390 210 {
-lab=voutp}
-N 950 210 1010 210 {
+N 1230 20 1230 50 { lab=vdd}
+N 1210 -120 1210 -90 { lab=#net1}
+N 1250 -110 1250 -90 { lab=vss}
+N 1130 -50 1170 -50 {
+lab=vcm}
+N 1310 -30 1390 -30 {
+lab=vout2}
+N 1390 -110 1390 -30 {
+lab=vout2}
+N 1070 140 1190 140 {
 lab=#net3}
-N 680 -170 680 -70 {
-lab=#net4}
-N 950 -130 950 210 {
+N 1120 -10 1120 140 {
 lab=#net3}
-N 680 -360 720 -360 {
-lab=vin_signal}
-N 780 -360 920 -360 {
+N 1120 -10 1170 -10 {
+lab=#net3}
+N 1250 140 1390 140 {
+lab=vout2}
+N 1390 -30 1390 140 {
+lab=vout2}
+N 950 140 1010 140 {
 lab=vin}
-N 1300 -120 1330 -120 {
+N 1310 -200 1340 -200 {
 lab=vss}
-N 1210 -120 1240 -120 {
-lab=#net1}
-N 1210 -120 1210 -50 {
+N 950 -320 1110 -320 {
+lab=vin}
+N 1210 -200 1250 -200 {
 lab=#net1}
 N 1210 -250 1210 -120 {
 lab=#net1}
-N 680 -130 950 -130 {}
-N 950 -320 1110 -320 {}
-N 950 -320 950 -130 {}
-C {devices/vsource.sym} 390 -210 0 0 {name=V1 value=DC\{vss\}}
-C {devices/vsource.sym} 490 -210 0 0 {name=V2 value=DC\{vdd\}}
-C {devices/gnd.sym} 390 -140 0 0 {name=l14 lab=GND}
-C {devices/vsource.sym} 680 -200 0 0 {name=V4 value="sin(0.1 \{vac\} 1Meg) dc 0 ac 1"}
-C {devices/capa.sym} 680 -300 2 0 {name=C4
-m=1
-value=1
-footprint=1206
-device="ceramic capacitor"}
-C {devices/lab_pin.sym} 490 -280 1 0 {name=l15 sig_type=std_logic lab=vdd}
-C {devices/lab_pin.sym} 390 -280 1 0 {name=l16 sig_type=std_logic lab=vss}
-C {devices/lab_pin.sym} 490 -140 3 0 {name=l18 sig_type=std_logic lab=vss}
-C {devices/lab_pin.sym} 1330 -120 3 0 {name=l22 sig_type=std_logic lab=vss}
-C {devices/lab_wire.sym} 680 -250 3 0 {name=l24 sig_type=std_logic lab=vsen}
-C {devices/res.sym} 750 -360 1 0 {name=R1
-value=625
+N 1390 -200 1390 -170 {
+lab=vss}
+N 1340 -200 1390 -200 {
+lab=vss}
+N 490 -300 490 -290 {
+lab=vin}
+N 490 -320 950 -320 {
+lab=vin}
+N 490 -320 490 -300 {
+lab=vin}
+N 950 -320 950 140 {
+lab=vin}
+N 1200 -490 1390 -490 {
+lab=vout1}
+N 1390 -490 1390 -340 {
+lab=vout1}
+N 970 -490 1140 -490 {
+lab=#net2}
+N 1030 -490 1030 -360 {
+lab=#net2}
+N 810 -490 910 -490 {
+lab=vcm}
+N 810 -490 810 -50 {
+lab=vcm}
+N 490 -70 490 -0 {
+lab=vcm}
+N 490 -110 490 -70 {
+lab=vcm}
+N 490 -290 490 -230 {
+lab=vin}
+N 810 -50 1130 -50 {
+lab=vcm}
+N 490 -50 680 -50 {
+lab=vcm}
+N 680 -50 810 -50 {
+lab=vcm}
+C {devices/vsource.sym} 210 -170 0 0 {name=V1 value=DC\{vss\}}
+C {devices/vsource.sym} 310 -170 0 0 {name=V2 value=DC\{vdd\}}
+C {devices/gnd.sym} 210 -100 0 0 {name=l14 lab=GND}
+C {devices/vsource.sym} 490 -140 0 0 {name=V4 value="0.2"
+spice_ignore=false}
+C {devices/lab_pin.sym} 310 -240 1 0 {name=l15 sig_type=std_logic lab=vdd}
+C {devices/lab_pin.sym} 210 -240 1 0 {name=l16 sig_type=std_logic lab=vss}
+C {devices/lab_pin.sym} 310 -100 3 0 {name=l18 sig_type=std_logic lab=vss}
+C {devices/lab_pin.sym} 1340 -200 3 0 {name=l22 sig_type=std_logic lab=vss}
+C {devices/res.sym} 1170 -490 1 0 {name=R3
+value=3750
 footprint=1206
 device=resistor
 m=1}
-C {devices/res.sym} 1230 -550 1 0 {name=R3
-value=4375
-footprint=1206
-device=resistor
-m=1}
-C {devices/netlist_not_shown.sym} 650 -530 0 0 {name=SIMULATION only_toplevel=false 
+C {devices/netlist_not_shown.sym} 190 -510 0 0 {name=SIMULATION only_toplevel=false 
 
 value="
 
@@ -105,7 +108,6 @@ value="
 .param vdd  = 1.8
 .param vss  = 0.0
 .param vcm  = 0.7
-.param vac  = 0.1
 .options TEMP = 65.0
 
 * Include Models
@@ -129,10 +131,10 @@ value="
   reset
   tran 0.01u 11u
   setplot tran1
-  plot v(vsen) v(vcm) v(voutn) v(voutp)
+  plot v(vin) v(vcm) v(vout1) v(vout2)
   plot i(v4)
 
-  write two_opams.raw
+  write diff_out_two.raw
 
   
   
@@ -148,15 +150,13 @@ m=1
 value=20p
 footprint=1206
 device="ceramic capacitor"}
-C {devices/lab_pin.sym} 1390 -200 3 0 {name=l2 sig_type=std_logic lab=vss}
-C {devices/lab_wire.sym} 1360 -340 0 0 {name=l3 sig_type=std_logic lab=voutn}
-C {devices/lab_pin.sym} 680 30 3 0 {name=l5 sig_type=std_logic lab=vss}
-C {devices/lab_wire.sym} 680 -120 0 0 {name=l4 sig_type=std_logic lab=vcm}
-C {devices/vsource.sym} 680 -40 0 0 {name=V5 value=DC\{vcm\}}
-C {devices/lab_wire.sym} 1110 -360 0 0 {name=l6 sig_type=std_logic lab=vin}
-C {devices/lab_wire.sym} 680 -360 0 0 {name=l7 sig_type=std_logic lab=vin_signal}
+C {devices/lab_wire.sym} 1360 -340 0 0 {name=l3 sig_type=std_logic lab=vout1}
+C {devices/lab_pin.sym} 490 100 3 0 {name=l5 sig_type=std_logic lab=vss}
+C {devices/lab_wire.sym} 490 -50 0 0 {name=l4 sig_type=std_logic lab=vcm}
+C {devices/vsource.sym} 490 30 0 0 {name=V5 value=DC\{vcm\}}
+C {devices/lab_wire.sym} 490 -320 0 0 {name=l6 sig_type=std_logic lab=vin}
 C {devices/lab_pin.sym} 1230 -420 1 0 {name=l8 sig_type=std_logic lab=vdd}
-C {devices/code.sym} 810 -520 0 0 {name=TT_MODELS
+C {devices/code.sym} 350 -500 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -165,24 +165,52 @@ value="
 
 "
 spice_ignore=false}
-C {/media/alex/psf/EDA/TIA_IPN/sch/opamp_sky130.sym} 1240 40 2 1 {name=x2}
-C {devices/lab_pin.sym} 1230 120 1 1 {name=l9 sig_type=std_logic lab=vdd}
-C {devices/isource.sym} 1270 -120 3 1 {name=I1 value=DC\{iref\}}
-C {devices/lab_pin.sym} 1250 -40 3 1 {name=l11 sig_type=std_logic lab=vss}
-C {devices/capa.sym} 1390 -70 2 1 {name=C2
+C {/media/alex/psf/EDA/TIA_IPN/sch/opamp_sky130.sym} 1240 -30 2 1 {name=x2}
+C {devices/lab_pin.sym} 1230 50 1 1 {name=l9 sig_type=std_logic lab=vdd}
+C {devices/isource.sym} 1280 -200 3 1 {name=I1 value=DC\{iref\}}
+C {devices/lab_pin.sym} 1250 -110 3 1 {name=l11 sig_type=std_logic lab=vss}
+C {devices/capa.sym} 1390 -140 2 1 {name=C2
 m=1
 value=20p
 footprint=1206
 device="ceramic capacitor"}
-C {devices/res.sym} 1220 210 1 0 {name=R2
-value=3750
+C {devices/res.sym} 1220 140 1 0 {name=R2
+value=4375
 footprint=1206
 device=resistor
 m=1}
-C {devices/res.sym} 1040 210 1 0 {name=R4
+C {devices/res.sym} 1040 140 1 0 {name=R4
 value=625
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_wire.sym} 1390 40 2 1 {name=l17 sig_type=std_logic lab=voutp}
-C {devices/lab_wire.sym} 1130 20 0 0 {name=l10 sig_type=std_logic lab=vin_signal}
+C {devices/lab_wire.sym} 1390 -30 2 1 {name=l17 sig_type=std_logic lab=vout2}
+C {devices/res.sym} 940 -490 1 0 {name=R5
+value=625
+footprint=1206
+device=resistor
+m=1}
+C {devices/res.sym} 490 -200 2 0 {name=R1
+value=625
+footprint=1206
+device=resistor
+m=1
+spice_ignore=false}
+C {sky130_fd_pr/res_high_po_2p85.sym} 600 50 0 0 {name=R9
+L=4.348
+model=res_high_po_2p85
+spiceprefix=X
+mult=1
+spice_ignore=true}
+C {sky130_fd_pr/res_high_po_2p85.sym} 600 130 0 0 {name=R6
+L=31.85
+model=res_high_po_2p85
+spiceprefix=X
+mult=1
+spice_ignore=true}
+C {sky130_fd_pr/res_high_po_2p85.sym} 780 120 0 0 {name=R7
+L=37.354
+model=res_high_po_2p85
+spiceprefix=X
+mult=1
+spice_ignore=true}
