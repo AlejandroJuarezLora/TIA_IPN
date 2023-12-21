@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.1.0 file_version=1.2
 }
 G {}
 K {}
@@ -139,7 +139,7 @@ value="
 
 .end
 "}
-C {/media/alex/psf/EDA/TIA_IPN/sch/opamp_sky130.sym} 1240 -340 0 0 {name=x1}
+C {/media/psf/EDA/TIA_IPN/sch/opamp_sky130.sym} 1240 -340 0 0 {name=x1}
 C {devices/lab_pin.sym} 1250 -260 3 0 {name=l1 sig_type=std_logic lab=vss}
 C {devices/capa.sym} 1390 -280 0 0 {name=C1
 m=1
