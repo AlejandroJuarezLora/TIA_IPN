@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -104,12 +104,12 @@ lab=#net4}
 N 1430 -210 1430 -150 {
 lab=#net4}
 C {devices/lab_pin.sym} 1330 -100 3 0 {name=l22 sig_type=std_logic lab=vss}
-C {/media/psf/EDA/TIA_IPN/sch/opamp_sky130.sym} 1240 -340 0 0 {name=x1}
+C {/home/alex/Desktop/EDA/TIA_IPN/sch/opamp_sky130.sym} 1240 -340 0 0 {name=x1}
 C {devices/lab_pin.sym} 1250 -260 3 0 {name=l1 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 1360 -340 0 0 {name=l3 sig_type=std_logic lab=vout1}
 C {devices/lab_wire.sym} 760 -320 0 0 {name=l6 sig_type=std_logic lab=vin1}
 C {devices/lab_pin.sym} 1230 -420 1 0 {name=l8 sig_type=std_logic lab=vdd}
-C {/media/psf/EDA/TIA_IPN/sch/opamp_sky130.sym} 1240 -30 2 1 {name=x2}
+C {/home/alex/Desktop/EDA/TIA_IPN/sch/opamp_sky130.sym} 1240 -30 2 1 {name=x2}
 C {devices/lab_pin.sym} 1230 50 1 1 {name=l9 sig_type=std_logic lab=vdd}
 C {devices/lab_pin.sym} 1250 -110 3 1 {name=l11 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 1390 20 2 1 {name=l17 sig_type=std_logic lab=vout2}
